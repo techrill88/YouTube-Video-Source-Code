@@ -1,0 +1,46 @@
+{
+    "namingConventions": {
+      "classes": {
+        "capitalizedWords": true
+      },
+      "functions": {
+        "snake_case": true
+      },
+      "variables": {
+        "snake_case": true
+      },
+      "constants": {
+        "UPPERCASE_WITH_UNDERSCORES": true
+      },
+      "modules": {
+        "short_lowercase": true
+      }
+    },
+    "codingStandards": {
+      "indentation": {
+        "type": "spaces",
+        "size": 4
+      },
+      "lineLength": 79,
+      "imports": {
+        "order": [
+          "builtins",
+          "third_party",
+          "local_project"
+        ]
+      },
+      "comments": {
+        "docstrings": {
+          "style": "numpy"
+        },
+        "inline": {
+          "prefix": "#"
+        }
+      },
+      "additionalRules": {
+        "functionSize": 20,
+        "ifElseSize": 3
+      }
+    }
+  }
+  

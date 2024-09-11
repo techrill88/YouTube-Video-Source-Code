@@ -1,0 +1,70 @@
+OWASP_Top_Ten_Checklist:
+  - A01:2021-Broken_Access_Control:
+      description: Ensure proper access control mechanisms are in place.
+      items:
+        - Check for missing or ineffective access control mechanisms.
+        - Verify that users cannot act outside of their intended permissions.
+        - Ensure that sensitive data is not exposed or accessible without proper authorization.
+
+  - A02:2021-Cryptographic_Failures:
+      description: Protect data in transit and at rest.
+      items:
+        - Use strong encryption algorithms for sensitive data.
+        - Ensure proper key management practices.
+        - Avoid deprecated cryptographic functions.
+
+  - A03:2021-Injection:
+      description: Prevent injection attacks by sanitizing input.
+      items:
+        - Use parameterized queries and prepared statements.
+        - Validate and sanitize all user inputs.
+        - Use ORM frameworks to abstract database access.
+
+  - A04:2021-Insecure_Design:
+      description: Design systems with security in mind from the start.
+      items:
+        - Conduct threat modeling during design phase.
+        - Follow secure design principles and patterns.
+        - Regularly review and update design based on security feedback.
+
+  - A05:2021-Security_Misconfiguration:
+      description: Ensure proper configuration of security settings.
+      items:
+        - Disable unnecessary features and services.
+        - Keep software and dependencies up to date.
+        - Implement security headers.
+
+  - A06:2021-Vulnerable_and_Outdated_Components:
+      description: Use up-to-date and secure components.
+      items:
+        - Regularly update third-party libraries and frameworks.
+        - Monitor for known vulnerabilities in components.
+        - Use tools to manage and automate dependency updates.
+
+  - A07:2021-Identification_and_Authentication_Failures:
+      description: Ensure robust authentication and session management.
+      items:
+        - Use multi-factor authentication (MFA).
+        - Implement secure password storage (e.g., bcrypt).
+        - Ensure proper session handling and expiration.
+
+  - A08:2021-Software_and_Data_Integrity_Failures:
+      description: Ensure the integrity of software and data.
+      items:
+        - Use digital signatures to verify software integrity.
+        - Implement integrity checks for critical data.
+        - Follow secure development practices and guidelines.
+
+  - A09:2021-Security_Logging_and_Monitoring_Failures:
+      description: Implement effective logging and monitoring.
+      items:
+        - Enable logging for security-relevant events.
+        - Regularly review and analyze logs.
+        - Implement alerting for suspicious activities.
+
+  - A10:2021-Server-Side_Request_Forgery_(SSRF):
+      description: Prevent SSRF attacks by validating and sanitizing requests.
+      items:
+        - Validate and sanitize all outgoing requests.
+        - Use allowlists to restrict permissible request destinations.
+        - Implement network segmentation to limit SSRF impact.
